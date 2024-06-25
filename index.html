@@ -1,30 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="style.css">
         <title> Page Title </title>
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, intial-scale=1">
-        <style>
-            img {
-                max-width: 75%;
-                
-            }
-            body{
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            .header {
-                padding: 80px;/*some padding*/
-                text-align: center;/*center the text*/
-                background: #1abc9c;/* green background */
-                color: white;/*white text*/}
-            /*Increase the font sixe of the <h1> element */ 
-            .header h1 {
-                font-size:40 px;
-                }
-
-        </style>
+        <script src="script.js" defer></script>
     </head>
     <body>
+        <a href="aboutme.html">About the Author page</a>
         <h1> FATHERS DAY HONORS JACK STUPPIN </h1>
         <p> A website created by Jonathan Stuppin</p>
     
@@ -33,20 +17,92 @@
             <p>A Website created  by  JONATHAN STUPPIN in honor of his father JACK STUPPIN</p>
             
         </div>
-        <h1> My Image Gallery</title></h1>
-        <img src = "Fathers day 1.JPG" alt="Fathers day 1 Description">
-        <img src = "Fathers day 2.JPG" alt="Fathers day 2 Description">
-        <img src = "Fathers day 3 .JPG">
-        <img src = "Fathers day 4.JPG">
-        <img src = "Fathers day 7.JPG">
-        <img src = "Fathers day 9.JPG">
-	<img src = "Fathers Day 10.JPG"> <p> this is my own paiting where I imitate my father's style</p>
-        <img src = "Fathers day 15.JPG">
-        <img src = "Fathers day 14.JPG">
+        <h1>Image Gallery</title></h1>
 
-       
-        <video controls>
-            <source src = "Fathers day 5.MP4", type = "video/mp4">
-        </video
+       <!--  Slideshow container -->
+        <div class="slideshow-container" >
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 10</div>
+            <img src="Blue trees.JPG" style="width:100%">
+            <div class="text">Blue Trees</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 10</div>
+            <img src="big flat green tree with small hills2.JPG">
+            <div class="text">Big Hill with Trees</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 10</div>
+            <img src="clouds.JPG" style="width:100%">
+            <div class="text">Clouds</div>
+          </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 10</div>
+                <img src="Eggplant painting.JPG" style="width:100%">
+                <div class="text">Eggplant</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 10</div>
+                <img src="living room painting.JPG" style="width:100%">
+                <div class="text">This paiting always hung in our living Room</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 10</div>
+                <img src="Peppers .JPG" style="width:100%">
+                <div class="text">Peppers</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 10</div>
+                <img src="Sunflowers.JPG" style="width:100%">
+                <div class="text">Sunflowers</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">8 / 10</div>
+                <img src="teacuplady.JPG" style="width:100%">
+                <div class="text">Lady Sipping Tea</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">9 / 10</div>
+                <img src="Mask for dad.JPG" style="width:100%">
+                <div class="text">Dad made these masks</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">10 / 10</div>
+                <img src="Mask for dad 2.JPG" style="width:100%">
+                <div class="text">This one is based on Commedia Dell'Arte, 16th century Italian theater</div>
+            </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+        </div>
+
+            
     </body>
 </html>
